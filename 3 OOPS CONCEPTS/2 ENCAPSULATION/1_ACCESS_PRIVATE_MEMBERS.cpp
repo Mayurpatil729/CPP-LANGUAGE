@@ -1,8 +1,9 @@
 // Date :
+
 //* Encapsulation  : wraping of data or data hiding from the user
 //*                   and also increased the security
 
-//! to access private attribute use get and set
+//! To access private attribute use get and set
 
 #include <iostream>
 using namespace std;
@@ -33,5 +34,20 @@ int main()
     myobj.setsalary(50000);
     cout << myobj.getsalary();
     return 0;
+
     // coded by Mayur
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -6,9 +6,14 @@ using namespace std;
 
 class Hero
 {
-public:
+private:
     int health; //* Access specifiers : by default it is privated , it is only access in class
     char level;
+
+    Hero()
+    {
+        cout << "Constructor Called ";
+    }
 
 public:
     char getlevel() //! getter
@@ -32,10 +37,51 @@ public:
         health = h;
         // return health;
     }
+
+    // Paramerterised Constructor
+    Hero(int health)
+    {
+        cout << "this -->" << this << endl;
+        this->health = health;
+    }
+
+    Hero(int health, char level)
+    {
+        cout << "this -->" << this << endl;
+        this->level = level;
+        this->health = health;
+    }
+
+    void print()
+    {
+        cout << level << endl;
+    }
 };
 
 int main()
 {
+
+    // Paramerterised Constructor
+    Hero ramesh(10);
+    cout << "Address of ramesh " << &ramesh << endl;
+    ramesh.gethealth();
+    ramesh.print();
+
+    Hero temp(23, 'B');
+    temp.print();
+
+    /*
+
+        // object created statically
+        cout << "HI" << endl;
+        Hero ramesh;
+        cout << "\nHello " << endl;
+
+        // object created dynamically
+        Hero *h = new Hero(); // Hero
+    */
+
+    /*
     //* creation oƒ object
     //! statically
 
@@ -55,6 +101,8 @@ int main()
 
     cout << "level: " << b->level << endl;
     cout << "health : " << b->gethealth() << endl;
+    */
+
     return 0;
 
     // coded by Mayur

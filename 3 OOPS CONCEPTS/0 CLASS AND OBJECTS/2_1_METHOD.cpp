@@ -50,6 +50,8 @@ public:              // Access specifier
     void myMethod(); // Method function defined inside the class
 };
 
+
+// class_NAME :: function_name()
 void Myclass::myMethod()
 {
     cout << "hello world";
