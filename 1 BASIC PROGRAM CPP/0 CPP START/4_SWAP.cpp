@@ -6,12 +6,13 @@ using namespace std;
 int fno, sno;
 int main()
 {
+
     cout << "\nProgram for swaping 2 numbers : ";
     cout << "\nBefore swaping numbers are : ";
 
     cout << "\nEnter the first number : ";
     cin >> fno;
-    cout << "Enter the second number : ";
+    cout << "\nEnter the second number : ";
     cin >> sno;
 
     fno = fno + sno;
@@ -23,5 +24,21 @@ int main()
     cout << "\nsecond number : " << sno;
 
     return 0;
+
 }
+
 // coded by Mayur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
